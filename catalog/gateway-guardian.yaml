@@ -3,6 +3,6 @@ version: "1.0.0"
 description: Telegram/gateway reliability guard — detects 409 polling conflicts, duplicate pollers, freezes, stale locks and missed deliveries, shows one health state and an approved recovery plan.
 repo: https://github.com/kawsthingz/kawsthingz-hermes-gateway-guardian
 subdir: .
-sha: 8a2cee7b997b24dea8a95f6afe92e6dc5d916b6b
+sha: 287a732d0501ef9b1623584f6fe49fef3e7a95a9
 screenshots: []
 tags: [reliability, telegram, gateway, diagnostics]
