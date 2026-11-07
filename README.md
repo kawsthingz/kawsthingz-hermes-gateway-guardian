@@ -2,6 +2,14 @@
 
 A small, read-only reliability guard for Hermes gateway and Telegram operation.
 
+## The 2 a.m. silent Telegram
+
+You wake up and your Hermes Telegram bot has been quiet for hours. Customers sent messages. Your agent says the gateway is running. Nothing reached the user.
+
+The cause is usually boring and invisible: two pollers for one token, a 409 conflict storm, a frozen gateway, or a stale lock after a restart. The worst part is the silence. A loud error is annoying. A silent failure erodes trust.
+
+Gateway Guardian exists for that moment. It watches the gateway and tells you, in one line, whether Telegram can actually reach the user: `OK`, `DEGRADED`, or `BLOCKED`, with the exact cause.
+
 ## Why
 
 Hermes users hit the same painful class of failure: Telegram goes quiet, a 409 polling conflict appears (two pollers, one token), the gateway freezes, or a stale lock blocks restart. The agent often reports "gateway running" while no reply can reach the user. Gateway Guardian makes that state visible in one place.
